@@ -7,11 +7,11 @@ export class App {
     configureRouter(config, router){
         
         config.map([
-                    {route : ['', 'home'], moduleId : './home', 
+                    {name : 'home', route : ['', 'home'], moduleId : './home', 
                         nav: true, title: 'Home'},
                     {name : 'recipe', route : 'recipe/:id', moduleId : './recipe', 
                         nav : false, title : 'Recipe details'},
-                    {route : 'weekly-menu', moduleId : './weekly-menu', 
+                    {name : 'weekly-menu', route : 'weekly-menu', moduleId : './weekly-menu', 
                         nav : true, title:'Weekly menu'}
         ]);
         this.router = router;
